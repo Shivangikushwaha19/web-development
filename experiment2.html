@@ -1,40 +1,118 @@
 <!DOCTYPE html>
-<!-- this is my first html code -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB DEV PREPSS!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flash News Portal</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url('https://motionarray.imgix.net/preview-959622-KcxgaIhjqE-high_0005.jpg?w=660&q=60&fit=max&auto=format') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+
+  header {
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+  }
+
+  nav {
+    background: rgba(255, 251, 251, 0.9);
+    text-align: left;
+    padding: 10px;
+  }
+
+  nav a {
+    color: #131313;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+  }
+
+  article {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 330px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  article img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  article h2 {
+    color: #ffcc00;
+    font-size: 1.3em;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  footer {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+</style>
 </head>
 <body>
-    <h1><i><u> PORTFOLIO </u></i></h1>
-<form action="/action.php">
-<input type="text" placeholder="usename id">
-<br>
- <input type="password" placeholder="password">
- <br>
- <br>
- <input type="radio" value="Class XI" name="Class">Class XI
- <br>
-<input type="radio" value="Class XII" name="Class"> Class XII
-<h5> select your fav sunjects</h5>
-<label for="chem">
-<input type="checkbox" value="chem" name="subject" id="101">chemistry
-</label>
-<br>
-<label for="maths">
-<input type="checkbox" value="maths" name="subject" id="102">Maths
-</label>
-<br>
-<label for="football">
-    <input type="checkbox" value="football" name="subject" id="103">football
-</label>
-<br>
-<br>
 
+<header>
+  <h1>WORLD News Portal</h1>
+  <p>Instant Headlines from Around the Globe</p>
+</header>
 
+<nav >
+  <a href="#">Home</a>
+  <a href="#">World</a>
+  <a href="#">Technology</a>
+  <a href="#">Sports</a>
+</nav>
 
-</form>
-  
-</body> 
-</html>
+<main>
+  <article>
+    <img src="https://i0.wp.com/innogyan.in/wp-content/uploads/2025/09/wp-17585916245406863905243555502467.jpg?resize=576%2C1024&ssl=1" alt="World News">
+    <h2>📱 OPPO new launch</h2>
+    <p>OPPO’s Find X9 Series is set to arrive in India in November 2025, boasts a 200 MP telephoto lens and large 7,500 mAh battery.</p>
+    <iframe src="https://www.youtube.com/embed/tQjXMse6JZw" allowfullscreen></iframe>
+  </article>
+
+  <article>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtPBYEcpYJ0XDwYLXlWpFW2Tkv44VgC-N0Gg&s" alt="Technology">
+    <h2>🚗 VOLVO EX30</h2>
+    <p>Volvo launched the EX30 electric SUV in India with a claimed range of ~480 km and a starting price of ~₹41 lakh.</p>
+    <iframe src="https://www.youtube.com/embed/46ZKCHYZwVY" allowfullscreen></iframe>
+  </article>
+  <article>
+    <img src="https://c.ndtvimg.com/2023-03/fc81nf6_india-vs-australia_625x300_19_March_23.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738" alt="Sports">
+    <h2>🏏 ODI TOSS </h2>
+    <p>The India team lost their toss for the 18th consecutive ODI during the recent series against Australia, continuing a bizarre trend.</p>
+    <iframe src="https://www.youtube.com/embed/OQEqet4idtM" allowfullscreen></iframe>
+  </article>
+</main>
+<footer style="text-align: center;">
+  &copy; SHIVANGI KUSHWAHA | 2025b01010126 .
+</footer>
+</body>
