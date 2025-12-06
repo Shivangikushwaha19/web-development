@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Background color for each plan */
+    .basic { background-color: #d1e7dd; }      /* Light green */
+    .standard { background-color: #ffe5b4; }   /* Light orange */
+    .premium { background-color: #dbeafe; }    /* Light blue */
+
+    /* Highlight price row */
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Responsive design */
+    @media (max-width: 700px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        display: none;
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+      }
+      td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        color: #555;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h2>Our Pricing Plans</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Features</th>
+    <th colspan="3">Plans</th>
+  </tr>
+  <tr>
+    <th class="basic">Basic</th>
+    <th class="standard">Standard</th>
+    <th class="premium">Premium</th>
+  </tr>
+  <tr>
+    <td data-label="Features">Storage</td>
+    <td class="basic" data-label="Basic">10 GB</td>
+    <td class="standard" data-label="Standard">50 GB</td>
+    <td class="premium" data-label="Premium">200 GB</td>
+  </tr>
+  <tr>
+    <td data-label="Features">Support</td>
+    <td class="basic" data-label="Basic">Email Only</td>
+    <td class="standard" data-label="Standard">Email + Chat</td>
+    <td class="premium" data-label="Premium">24/7 Phone Support</td>
+  </tr>
+  <tr>
+    <td data-label="Features">Domains</td>
+    <td class="basic" data-label="Basic">1</td>
+    <td class="standard" data-label="Standard">5</td>
+    <td class="premium" data-label="Premium">Unlimited</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Pricing</td>
+    <td class="basic price" data-label="Basic">$9/mo</td>
+    <td class="standard price" data-label="Standard">$19/mo</td>
+    <td class="premium price" data-label="Premium">$29/mo</td>
+  </tr>
+  <tr>
+    <td class="basic"><button>Choose Basic</button></td>
+    <td class="standard"><button>Choose Standard</button></td>
+    <td class="premium"><button>Choose Premium</button></td>
+  </tr>
+</table>
+
+</body>
+</html>
