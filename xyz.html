@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Student Profile Cards</title>
+  <title>Student Profile Cards — Flexbox Layout</title>
   <style>
     :root{
       --bg:#ffffff;
@@ -14,18 +14,8 @@
       --shadow: 0 5px 15px rgba(28, 27, 27, 0.06);
     }
     *{box-sizing:border-box}
-    html,body{
-     height:100%;
-     margin:0;
-     font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;
-    }
-    body{
-     background:var(--bg);
-     display:flex;
-     align-items:center;
-     justify-content:center;
-     padding:40px;
-    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial}
+    body{background:var(--bg);display:flex;align-items:center;justify-content:center;padding:40px}
     .frame{
       width:min(1100px,96%);
       border:3px solid #222;
@@ -55,41 +45,22 @@
       flex-direction:column;
       align-items:center;
     }
-    .card:hover{
-      transform:translateY(-8px);
-      box-shadow:0 20px 40px rgba(12,20,40,0.12)}
+    .card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(12,20,40,0.12)}
 
     .avatar{
       width:72px;height:72px;border-radius:50%;
       background:var(--accent);
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      display:flex;align-items:center;justify-content:center;
       color:rgb(255, 255, 255);font-weight:700;font-size:18px;
       box-shadow:0 6px 16px rgba(20,136,255,0.18);
       margin-top:-52px; 
     }
 
-    .name{
-      margin-top:12px;
-      font-weight:700;
-      font-size:16px;
-      color:#111;
-    }
-    .meta{
-      margin-top:8px;
-      font-size:13px;
-      color:var(--muted);
-      line-height:1.4;
-    }
+    .name{margin-top:12px;font-weight:700;font-size:16px;color:#111}
+    .meta{margin-top:8px;font-size:13px;color:var(--muted);line-height:1.4}
 
 
-    .separator{
-      width:2px;
-      height:84px;
-      background:rgba(0,0,0,0.03);
-      position:relative;
-    }
+    .separator{width:2px;height:84px;background:rgba(0,0,0,0.03);position:relative;}
 
 
     @media (max-width:720px){
@@ -121,8 +92,6 @@
       </div>
     </div>
   </div>
-  <footer style="text-align: center;">
-&copy; SHIVANGI KUSHWAHA | 2025b01010126 .
-</footer>
+  
 </body>
 </html>
