@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Room Booking Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f3f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 420px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 18px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea{
+            resize: none;
+            height: 80px;
+        }
+        button{
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-submit{
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-reset{
+            background-color: #e74c3c;
+            color: white;
+        }
+        .btns{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Hotel Room Booking</h2>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label>Check-in Date:</label>
+        <input type="date">
+
+        <label>Check-out Date:</label>
+        <input type="date">
+
+        <label>Select Room Type:</label>
+        <select>
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+            <option>Suite</option>
+        </select>
+
+        <label>Number of Guests:</label>
+        <input type="number" min="1" max="10">
+
+        <label>Special Requests:</label>
+        <textarea placeholder="Write any special requests..."></textarea>
+
+        <div class="btns">
+            <button type="submit" class="btn-submit">Book Now</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+    </form>
+</div>
+<footer style="text-align: center;">
+  &copy; SHIVANGI KUSHWAHA | 2025b01010126 .
+</footer>
+
+</body>
+</html>
